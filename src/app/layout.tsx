@@ -30,7 +30,7 @@ export default function RootLayout({
       >
           <Frigade.Provider
       apiKey="api_public_g7DfYzpeVb81sPXWSiQyktEBbePBKq8leUcB0y5UKznEgbkmzCG9GcoGANpTJ9xc"
-      userId="1">
+      userId="4">
           {children}
       </Frigade.Provider>
       
