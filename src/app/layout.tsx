@@ -28,8 +28,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        
-        {children}
+          <Frigade.Provider
+      apiKey="api_public_g7DfYzpeVb81sPXWSiQyktEBbePBKq8leUcB0y5UKznEgbkmzCG9GcoGANpTJ9xc"
+      userId="1">
+          {children}
+      </Frigade.Provider>
+      
       </body>
     </html>
   );
