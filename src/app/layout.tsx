@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import * as Frigade from '@frigade/react';
+import { Onborda, OnbordaProvider } from "onborda";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,11 +28,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-          <Frigade.Provider
-      apiKey="api_public_g7DfYzpeVb81sPXWSiQyktEBbePBKq8leUcB0y5UKznEgbkmzCG9GcoGANpTJ9xc"
-      userId="4">
+         
           {children}
-      </Frigade.Provider>
       
       </body>
     </html>
